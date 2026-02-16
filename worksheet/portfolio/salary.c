@@ -3,14 +3,28 @@
 
 /*
  * Potrfolio submission
- * Name:
- * ID:
+ * Name:Fraser Hedger   
+ * ID:201919103
  */
 
  int main( void ) {
 
-    // define and initialise variables for the problem data 
 
+
+    // define and initialise variables for the problem data 
+    float salary = 36250.00;
+    float NIrate = 0.08;
+    float TAXrate = 0.1;
+
+    float NIcontribution = salary * NIrate;
+    float remaining = salary - NIcontribution;
+    float taxcontribution = remaining * TAXrate;
+    float takehomepay = remaining - taxcontribution
+   
+
+    printf("%.2f", NIcontribution);
+    printf("%.2f", taxcontribution);
+    printf("%.2f", takehomepay);
     // calculate the deductions and final take-home salary
 
     // Use only these print statement with appropriate formatting and variable names
