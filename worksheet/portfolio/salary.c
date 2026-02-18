@@ -21,6 +21,7 @@
     float taxcontribution = remaining * TAXrate;
     float takehomepay = remaining - taxcontribution;
 
+
    
     printf("Salary £%.2f\n", salary);
     printf("NI contribution £%.2f\n", NIcontribution);
