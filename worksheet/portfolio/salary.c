@@ -22,10 +22,11 @@
     float takehomepay = remaining - taxcontribution;
 
    
-    printf("Salary: £%.2f", salary);
-    printf("NI contribution £%.2f", NIcontribution);
-    printf("Tax contribution £%.2f", taxcontribution);
-    printf("Take home salary £%.2f", takehomepay);
+    printf("Salary £%.2f\n", salary);
+    printf("NI contribution £%.2f\n", NIcontribution);
+    printf("Tax contribution £%.2f\n", taxcontribution);
+    printf("Take home salary £%.2f\n", takehomepay);
+
     // calculate the deductions and final take-home salary
 
     // Use only these print statement with appropriate formatting and variable names
