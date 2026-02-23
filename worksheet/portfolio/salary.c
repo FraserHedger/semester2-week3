@@ -17,9 +17,9 @@
     float TAXrate = 0.1;
 
     float NIcontribution = salary * NIrate;
-    float remaining = salary - NIcontribution;
+    float remaining = salary - NIcontribution - 12500;
     float taxcontribution = remaining * TAXrate;
-    float takehomepay = remaining - taxcontribution;
+    float takehomepay = remaining - taxcontribution + 12500;
 
 
    
