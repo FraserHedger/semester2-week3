@@ -1,40 +1,28 @@
-
 #include <stdio.h>
-
 /*
- * Potrfolio submission
- * Name:Fraser Hedger   
- * ID:201919103
+ * Portfolio submission
+ * Name: Fraser Hedger
+ * ID: 201919103
  */
+int main( void ) {
 
- int main( void ) {
-
-
-
-    // define and initialise variables for the problem data 
+    // Define and initialise variables for the problem data
     float salary = 36250.00;
-    float NIrate = 0.08;
-    float TAXrate = 0.1;
+    float NIrate = 0.08;   // 8% National Insurance rate
+    float TAXrate = 0.15;  // 15% Tax rate
 
+    // Calculate the deductions and final take-home salary
     float NIcontribution = salary * NIrate;
-    float remaining = salary - NIcontribution - 12500;
+    float remaining = (salary - NIcontribution) - 12500; // taxable amount above threshold
     float taxcontribution = remaining * TAXrate;
-    float takehomepay = remaining - taxcontribution + 12500;
+    float takehomepay = salary - NIcontribution - taxcontribution;
 
-
-   
     printf("Salary £%.2f\n", salary);
     printf("NI contribution £%.2f\n", NIcontribution);
     printf("Tax contribution £%.2f\n", taxcontribution);
     printf("Take home salary £%.2f\n", takehomepay);
 
-    // calculate the deductions and final take-home salary
-
-    // Use only these print statement with appropriate formatting and variable names
-    //printf("Salary £...",var_name);
-    //printf("NI contribution £...",var_name);
-    //printf("Tax contribution £...",var_name);
-    //printf("Take home salary £...",var_name);
-
     return 0;
- }
+}
+
+
